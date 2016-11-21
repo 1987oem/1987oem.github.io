@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/Background-copy.jpg);
+    background-image: url(Background-copy.jpg);
     background-size: cover;
     position: absolute;
     width: 100%;
@@ -13,7 +13,7 @@ body {
 
 .header {
     width: 100%;
-    background-image: url(../img/Menu.png);
+    background-image: url(Menu.png);
     position: fixed;
     left: -1px;
     top: -2px;
@@ -98,7 +98,7 @@ span {
 .btn {
     margin: 35px auto;
     border-radius: 5px;
-    background-image: url(../img/Layer-3%20copy.png);
+    background-image: url(Layer-3%20copy.png);
     padding: 0 0;
     color: white;
     width: 276px;
