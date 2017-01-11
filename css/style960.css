@@ -26,7 +26,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .header-wrapper {
     position: relative;
     height: 846px;
-/*     background-image: url(blob/master/960px/BG-min.png); */
+    background-image: url(blob/master/960px/BG-min.png);
     background-size: cover;
 }
 
@@ -38,7 +38,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 .logo {
-    background-image: url(blob/master/960px/my-version_logo.png);
+    background-image: url(960px/my-version_logo.png);
     background-size: cover;
     position: static;
     margin-top: 7.27423%;
