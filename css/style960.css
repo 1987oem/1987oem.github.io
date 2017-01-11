@@ -26,7 +26,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .header-wrapper {
     position: relative;
     height: 846px;
-    background: url(image/960px/BG.png) 50% 0% no-repeat;
+    background: url(960px/BG.png) 50% 0% no-repeat;
     background-size: cover;
 }
 
@@ -38,7 +38,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 .logo {
-    background-image: url(../image/960px/my-version_logo.png);
+    background-image: url(960px/my-version_logo.png);
     background-size: cover;
     position: static;
     margin-top: 7.27423%;
@@ -305,7 +305,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 } 
 
 .post__carousel-wrapper {
-    background-image: url(../image/960px/Layer-60.png);
+    background-image: url(960px/Layer-60.png);
 	height: 106%;
     width: 100%;
     position: relative;
