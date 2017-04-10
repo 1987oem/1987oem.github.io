@@ -2,197 +2,230 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HW 7-8</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style960.css" media="screen and (min-width: 960px)">
-    <link rel="stylesheet" href="css/style768.css" media="screen and (min-width: 768px) and (max-width: 960px)">
-    <link rel="stylesheet" href="css/style480.css" media="screen and (min-width: 480px) and (max-width: 768px)">
-	  <link rel="stylesheet" href="css/style320.css" media="screen and (min-width: 320px) and (max-width: 480px)">
-</head>
+    <title>SmartLine</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/main.css" media="screen and (min-width: 480px)">
+    <link rel="stylesheet" href="style/style320.css" media="screen and (min-width: 320px) and (max-width: 480px)">
+    <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script></head>
+<script src="js/navbar.js"></script>
 <body>
-   <section class="header-wrapper">
+
+
+<!--HEADER-->
+   <section class="header_wrapper">
        <header class="header">
-           <figure class="logo"></figure>
-           <div class="menu">
-               <ul class="menu_list">
-                   <li class="menu__item first-item"><a class="menu__link visible-link" href="#"><span style="color:white">HOME</span></a></li>
-                   <li class="menu__item other-item"><a class="menu__link hidden-link" href="#">ABOUT</a></li>
-                   <li class="menu__item other-item"><a class="menu__link hidden-link" href="#">BLOG</a></li>
-                   <li class="menu__item other-item"><a class="menu__link hidden-link" href="#">PRODUCTS</a></li>
-                   <li class="menu__item other-item"><a class="menu__link hidden-link" href="#">LOREM IPSUM</a></li>
-                   <li class="menu__item other-item"><a class="menu__link hidden-link" href="#">DOLOR SIT AMET</a></li>
+           <nav class="navbar navbar-fixed-left navbar-minimal animate" role="navigation">
+               <div class="navbar-toggler animate">
+                   <span>
+                       <img src="img/burger.png" alt="">
+                   </span>
+               </div>
+               <ul class="navbar-menu animate">
+                   <li>
+                       <a href="#about-us" class="animate">
+                           <img src="img/company_1.png" alt="">
+                           <span class="desc animate"> Who We Are </span>
+                           <span class="glyphicon glyphicon-user"></span>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#blog" class="animate">
+                           <img src="img/five.png" alt="">
+                           <span class="desc animate"> What We Say </span>
+                           <span class="glyphicon glyphicon-info-sign"></span>
+                       </a>
+                   </li>
+                   <li>
+                       <a href="#contact-us" class="animate">
+                           <img src="img/home.png" alt="">
+                           <span class="desc animate"> How To Find Us </span>
+                           <span class="glyphicon glyphicon-comment"></span>
+                       </a>
+                   </li>
                </ul>
+           </nav>
+           <figure class="header_logo"></figure>
+           <div class="header_address">
+               <p class="line hide">вул. Нижній Вал</p>
+               <p class="line second">Комфорт таун</p>
            </div>
-           <ul class="carousel-labels">
-		            <li class="carousel-label">
-			            <label for="slide1"></label>
-		            </li>
-		            <li class="carousel-label">
-			            <label for="slide2"></label>
-		            </li>
-		            <li class="carousel-label">
-			            <label for="slide3"></label>
-		            </li>
-	            </ul>
-	       <img class="iphone" src="image/960px/Shape-15.png" alt="">
+           <div class="header_tel">
+               <p class="line">(044) 000-00-00</p>
+               <p class="line second">Лінія працює</p>
+           </div>
+           <nav class="lang-panel">
+               <ul class="navbar-nav">
+                   <li class="nav-item dropdown">
+                       <a class="dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Укр</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#">Рус</a>
+                            <a class="dropdown-item" href="#">Eng</a>
+                       </div>
+                   </li>
+               </ul>
+           </nav>
        </header>
        <section class="carousel-wrapper">
 	           <input type="radio" checked="checked" id="slide1" class="carousel-selector" name="carousel-selector" />
 	           <input type="radio" id="slide2" class="carousel-selector" name="carousel-selector" />
-	           <input type="radio" id="slide3" class="carousel-selector" name="carousel-selector" /> 
-	            <ul class="carousel-items">
+	           <input type="radio" id="slide3" class="carousel-selector" name="carousel-selector" />
+               <ul class="carousel-items">
 		            <li class="carousel-item ">
 		              <div class="carousel-box">
-		                <h1 class="carousel-box__header">Lorem Ipsum Dolor</h1>
-		                <h3 class="carousel-box__header2">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h3>
-		                <p class="carousel-box__text">Semper nam ipsa natus accusamus hic ea. Facere in aspernatur tempore magnam veniam. Ducimus ut, expedita esse, nobis magnam error corrupti sapiente velit totam aliquam quasi minus, pariatur quia? Laudantium nisi eveniet praesentium quos expedita labore iste ducimus, consequuntur qui soluta incidunt explicabo lectus lobortis.</p>
+		                <h1 class="carousel-box__header">Lorem ipsum</h1>
+		                <p class="carousel-box__text">Lorem ipsum dolor sit amet, <br>consectetuer adipiscing elit, sed dia</p>
 		              </div>
 		            </li>
 		            <li class="carousel-item">
 		              <div class="carousel-box">
-		                <h1 class="carousel-box__header">Lorem Ipsum Dolor</h1>
-		                <h3 class="carousel-box__header2">IT WILL MAKE ALL OF YOUR DREAMS COME <span id="hidden">TRUE</span></h3>
-		                <p class="carousel-box__text">Semper nam ipsa natus accusamus hic ea. Facere in aspernatur tempore magnam veniam. Ducimus ut, expedita esse, nobis magnam error corrupti sapiente velit totam aliquam quasi minus, pariatur quia? Laudantium nisi eveniet praesentium quos expedita labore iste ducimus, consequuntur qui soluta incidunt explicabo lectus lobortis.</p>
+                          <h1 class="carousel-box__header">Lorem ipsum</h1>
+                          <p class="carousel-box__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed</p>
 		              </div>
 		            </li>
 		            <li class="carousel-item">
 		              <div class="carousel-box">
-		                <h1 class="carousel-box__header">Lorem Ipsum Dolor</h1>
-		                <h3 class="carousel-box__header2">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h3>
-		                <p class="carousel-box__text">Semper nam ipsa natus accusamus hic ea. Facere in aspernatur tempore magnam veniam. Ducimus ut, expedita esse, nobis magnam error corrupti sapiente velit totam aliquam quasi minus, pariatur quia? Laudantium nisi eveniet praesentium quos expedita labore iste ducimus, consequuntur qui soluta incidunt explicabo lectus lobortis.</p>
+                          <h1 class="carousel-box__header">Lorem ipsum</h1>
+                          <p class="carousel-box__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed</p>
 		              </div>
 		            </li>
 	            </ul>
-            </section>
+               <button class="carousel-button">Кнопка</button>
+               <ul class="carousel-labels">
+                       <li class="carousel-label">
+                           <label for="slide1"></label>
+                       </li>
+                       <li class="carousel-label">
+                           <label for="slide2"></label>
+                       </li>
+                       <li class="carousel-label">
+                           <label for="slide3"></label>
+                       </li>
+                   </ul>
+       </section>
    </section>
-   <section class="container-wrapper">
-       <aside class="container-box">
-            <article class="box">
-             <img class="box__img" src="image/960px/Layer-34.png" alt="">
-             <p class="box__header">ABOUT OUR COMPANY</p>
-             <p class="box__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
-             <a class="box__link" href="#">READ MORE</a>
-           </article>
-            <article class="box box2">
-             <img class="box__img" src="image/960px/Layer-35.png" alt="">
-             <p class="box__header">ABOUT OUR COMPANY</p>
-             <p class="box__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
-             <a class="box__link" href="#">READ MORE</a>
-           </article>
-            <article class="box">
-             <img class="box__img" src="image/960px/Layer-36.png" alt="">
-             <p class="box__header">ABOUT OUR COMPANY</p>
-             <p class="box__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam</p>
-             <a class="box__link" href="#">READ MORE</a>
-           </article>    
-       </aside>
-   </section>
-   <section class="post-wrapper">
-       <section class="post">
-         <aside class="post__side side1">
-             <img class="post__side_img1" src="image/960px/Layer-82.png" alt="">
-             <article class="post__carousel-wrapper">
-	           <input type="radio" checked="checked" id="post__slide1" class="post__carousel-selector" name="post__carousel-selector" />
-	           <input type="radio" id="post__slide2" class="post__carousel-selector" name="post__carousel-selector" />
-	           <input type="radio" id="post__slide3" class="post__carousel-selector" name="post__carousel-selector" /> 
-	            <ul class="post__carousel-items">
-		            <li class="post__carousel-item ">
-		              <div class="post__carousel-box">
-		                <h1 class="post__carousel-box_header">PingbulLer <span class="post__carousel-box_header span">starts here</span></h1>
-		                <p class="post__carousel-box_text">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</p>
+<!--INFORMATION BLOCK-->
+   <section class="info_wrapper">
+       <section class="info_container">
+         <aside class="block">
+             <article class="info-wrapper">
+	           <input type="radio" checked="checked" id="post__slide1" class="info-selector" name="info-selector" />
+	           <input type="radio" id="post__slide2" class="info-selector" name="info-selector" />
+	           <input type="radio" id="post__slide3" class="info-selector" name="info-selector" />
+	            <ul class="info-items">
+		            <li class="info-item ">
+		              <div class="info-box">
+		                <h1 class="info-box_header">Lorem ipsum</h1>
+                        <div class="figure"></div>
+		                <p class="info-box_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim</p>
 		              </div>
 		            </li>
-		            <li class="post__carousel-item ">
-		              <div class="post__carousel-box">
-		                <h1 class="post__carousel-box_header">PingbulLer <span class="post__carousel-box_header span">starts here</span></h1>
-		                <p class="post__carousel-box_text">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</p>
+		            <li class="info-item ">
+		              <div class="info-box">
+		                <h1 class="info-box_header">Lorem ipsum</h1>
+                          <div class="figure"></div>
+                          <p class="info-box_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim</p>
 		              </div>
 		            </li>
-		            <li class="post__carousel-item ">
-		              <div class="post__carousel-box">
-		                <h1 class="post__carousel-box_header">PingbulLer <span class="post__carousel-box_header span">starts here</span></h1>
-		                <p class="post__carousel-box_text">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</p>
+		            <li class="info-item ">
+		              <div class="info-box">
+		                <h1 class="info-box_header">Lorem ipsum</h1>
+                          <div class="figure"></div>
+                          <p class="info-box_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim</p>
 		              </div>
 		            </li>
 	            </ul>
             </article>
-             <ul class="post__carousel-labels">
-		        <li class="post__carousel-label">
-			    <label for="post__slide1"></label>
+             <ul class="info-labels">
+		        <li class="info-label">
+			        <label for="post__slide1"></label>
 		        </li>
-		        <li class="post__carousel-label">
-			    <label for="post__slide2"></label>
+		        <li class="info-label">
+			        <label for="post__slide2"></label>
 		        </li>
-		        <li class="post__carousel-label">
-			    <label for="post__slide3"></label>
+		        <li class="info-label">
+			        <label for="post__slide3"></label>
 		        </li>
 	         </ul>
          </aside>
-         <aside class="post__side side2">
-             <p class="side2__header">RECENT UPDATES</p>
-                <div class="side2__part1">
-                   <img class="part1__img" src="image/960px/Layer-83.png" alt="">
-                   <p class="part1__header">Nunc turpis neque feugiat eget </p>
-                   <p class="part1__text">Posted by Admin on March 13 2012 in Recent News</p>
-               </div>
-               <div class="side2__part1">
-                   <img class="part1__img" src="image/960px/Layer-83.png" alt="">
-                   <p class="part1__header">Nunc turpis neque feugiat eget </p>
-                   <p class="part1__text">Posted by Admin on March 13 2012 in Category</p>
-               </div>
-               <div class="side2__part1">
-                   <img class="part1__img" src="image/960px/Layer-83.png" alt="">
-                   <p class="part1__header">Nunc turpis neque feugiat eget </p>
-                   <p class="part1__text">Posted by Admin on March 13 2012 in Blog Apdates</p>
-               </div>      
-             <a class="part1__link" href="#">READ MORE HERE</a>
-             <a class="part1__link_mob" href="#">MORE BLOG POST</a>
+         <aside class="block side2">
+             <ul class="info-items">
+                 <div class="info-box">
+                     <h1 class="info-box_header">Lorem ipsum</h1>
+                     <div class="figure"></div>
+                     <p class="info-box_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim</p>
+                 </div>
+             </ul>
          </aside>
-           <!--<img class="post__footer_img" src="image/960px/logos.png" alt="">-->
+         <aside class="block side3">
+             <ul class="info-items">
+                 <div class="info-box">
+                     <h1 class="info-box_header">Lorem ipsum</h1>
+                     <div class="figure"></div>
+                     <p class="info-box_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim</p>
+                 </div>
+             </ul>
+         </aside>
+         <aside class="block side4">
+             <ul class="info-items">
+                 <div class="info-box">
+                     <h1 class="info-box_header">Lorem ipsum</h1>
+                     <div class="figure"></div>
+                     <p class="info-box_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim</p>
+                 </div>
+             </ul>
+         </aside>
       </section>
-		 <aside class="post__footer">
-			 <img class="post__footer_img" src="image/960px/logos.png" alt="">
-			 <img class="post__footer_img-480px" src="image/480px/logos.png" alt="">
-			 <img class="post__footer_img-320px" src="image/320px/logos.png" alt="">
-			 <img class="post__footer_img-320px img___2" src="image/320px/layer-51.png" alt="">
-			 <img class="post__footer_img-320px img___3" src="image/320px/layer-52.png" alt="">
-			 </aside>
-   </section> 
-   <section class="news-wrapper">
-       <aside class="news-box">
-           <article class="news others hidden_block">
-             <p class="other__header">NEWS CATEGORIES</p>
-             <p class="other__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus  </p>
-           </article>
-           <article class="news news_1">
-             <img class="news__img" src="image/960px/ER.png" alt="">
-             <p class="news__copyright">Copyright 2013, Pingbull AS</p>
-             <p class="news__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque </p>
-           </article>
-           <article class="news others">
-             <p class="other__header">RECENT COMMENTS</p>
-             <p class="other__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus  </p>
-           </article>
-           <article class="news others">
-             <p class="other__header">NEWS CATEGORIES</p>
-             <p class="other__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar. Quisque urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus  </p>
-           </article>
-       </aside>
    </section>
-   <section class="footer-wrapper">
-       <footer class="footer">
-          <nav class="footer__menu">
-               <ul class="footer__list">
-                   <li class="footer__item"><a class="footer__link" href="#">HOME</a></li>
-                   <li class="footer__item"><a class="footer__link" href="#">ABOUT</a></li>
-                   <li class="footer__item"><a class="footer__link" href="#">BLOG</a></li>
-                   <li class="footer__item"><a class="footer__link" href="#">PRODUCTS</a></li>
-                   <li class="footer__item"><a class="footer__link" href="#">LOREM IPSUM</a></li>
-                   <li class="footer__item"><a class="footer__link" href="#">DOLOR SIT AMET</a></li>
-               </ul>
-           </nav>
-           <p class="signature">Designed by <span class="signature__span">Pingbull AS</span></p>
-       </footer>
+<!--REGISTRATION-->
+   <section class="registration-wrapper">
+           <div class="container">
+               <div class="row">
+                   <div class=" col-sm-12 get_form_inner">
+                       <div class="text-center">
+                           <div class="col-sm-8">
+                               <h1 class="register_head">Lorem <br>ipsum dolor</h1>
+                               <p class="register_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet </p>
+                           </div>
+                       </div>
+                   </div>
+                       <form class="form" name="registerForm" method="post" action="">
+                           <div class="group">
+                               <input type="text" name="FirstName" placeholder="Ім'я" required="required">
+                               <span class="bar"></span><label></label>
+                           </div>
+                           <div class="group">
+                               <input type="number" name="Phone" placeholder="Телефон" required="required">
+                               <span class="bar"></span><label></label>
+                           </div>
+                           <div class="form-group text-center">
+                               <div>
+                                   <button type="submit" class="btn btn-info">Кнопка</button>
+                               </div>
+                               <div class="container-fluid loading hidden">
+                                   <label class="register_footer"><span class="fa fa-refresh fa-spin"></span>
+                                       Або зателефонуйте за номером (000) 000-00-00 <br>
+                                       Ми працюємо цілодобово</label>
+                               </div>
+                           </div>
+                       </form>
+                   </div>
+               </div>
+           </div>
    </section>
+<!--FOOTER-->
+   <section class="copyright">
+       <div class="footer_container ">
+           <div class="col-sm-12 col-xl-12">
+               <p class="left">© 2017</p>
+               <p class="right">SMARTLINE</p>
+           </div>
+       </div>
+   </section>
+
+   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
 </html>
