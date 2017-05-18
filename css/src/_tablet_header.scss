@@ -1,0 +1,83 @@
+.header {
+  height: 700px;
+  background-color: hsla(225, 50%, 50%, 0.5);
+  background: url(../img/header_img.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+}
+
+.header__buttons {
+  width: 86%;
+  padding: 40px 0 0 6.2%;
+}
+
+.header__buttons__name {
+  color: white;
+  display: inline-block;
+  font-size: 21px;
+  float: left;
+  margin: 7px 0 0 0.1%;
+}
+
+.header__buttons a {
+  text-decoration: none;
+  color: white;
+}
+
+.header__buttons__login {
+  display: inline-block;
+  margin: 10px 1.7% 0 1%;
+  font-size: 14px;
+  float: right;
+}
+
+.header__buttons__signin {
+  display: inline-block;
+  padding: 9px 2% 9px 2.5%;
+  margin: -2px 0.5% 0 1%;
+  border: 3px solid white;
+  margin-left: 1%;
+  border-radius: 25px;
+  font-size: 14px;
+  float: right;
+}
+
+.header__buttons__name__mobile {
+  display: none;
+}
+
+.header__title {
+  margin: 143px 15% 20px 13%;
+  color: white;
+  font-size: 52px;
+  text-align: center;
+  line-height: 60px;
+  letter-spacing: -0.0px;
+}
+
+.header__subtitle {
+  margin: 27px 22% 20px 20%;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  font-family: 'robotolight', 'sans-serif';
+  line-height: 24px;
+}
+
+.header__button {
+  margin: 49px 0 76px 0;
+}
+
+.header__button__search {
+  margin: 0 0 0 34%;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 2.8% 10px 2.5%;
+  border: 1px solid #ff4e50;
+  border-radius: 25px;
+  background-color: #ff4e50;
+  text-decoration: none;
+}

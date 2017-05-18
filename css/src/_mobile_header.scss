@@ -1,0 +1,83 @@
+.header {
+  height: 540px;
+  background-color: hsla(225, 50%, 50%, 0.5);
+  background: url(../img/header_img.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+}
+
+.header__buttons {
+  width: 75%;
+  padding: 22px 9% 0 0.5%;
+}
+
+.header__buttons__name {
+  display: none;
+}
+
+.header__buttons__name__mobile {
+  color: white;
+  font-size: 21px;
+  margin: 116px 0 0 0;
+  text-align: center;
+}
+
+.header__buttons a {
+  text-decoration: none;
+  color: white;
+}
+
+.header__buttons__login {
+  display: inline-block;
+  margin: 9px 6.6% 0 1%;
+  font-size: 14px;
+  float: right;
+}
+
+.header__buttons__signin {
+  display: inline-block;
+  padding: 9px 7% 9px 7%;
+  margin: -2px 2.5% 0 1%;
+  border: 3px solid white;
+  margin-left: 1%;
+  border-radius: 25px;
+  font-size: 14px;
+  float: right;
+}
+
+.header__title {
+  margin: 31px 0 5px 0;
+  color: white;
+  font-size: 29px;
+  text-align: center;
+  line-height: 35px;
+  letter-spacing: -0.0px;
+}
+
+.header__subtitle {
+  margin: 9px 16% 20px 16%;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'robotolight', 'sans-serif';
+  line-height: 24px;
+}
+
+.header__button {
+  margin: 23px 0 76px 0;
+  text-align: center;
+}
+
+.header__button__search {
+  margin: 0 0 0 0;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 14.8% 10px 14.5%;
+  border: 1px solid #ff4e50;
+  border-radius: 25px;
+  background-color: #ff4e50;
+  text-decoration: none;
+}
